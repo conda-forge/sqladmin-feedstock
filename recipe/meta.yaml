@@ -28,6 +28,9 @@ requirements:
     - typing_extensions >=4.0
     - wtforms >=3,<4
 
+    # Not listed upstream but needed anyway
+    - itsdangerous ==2.1.2
+
 test:
   imports:
     - sqladmin
