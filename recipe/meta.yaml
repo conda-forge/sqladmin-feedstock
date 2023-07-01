@@ -1,5 +1,5 @@
 {% set name = "sqladmin" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqladmin-{{ version }}.tar.gz
-  sha256: e8f0691250395256b4d0f9739e87bd465b8f5732d59e29d378a79bfcccda4fa8
+  sha256: 7a7b54fe179022e1f08861205a2b953b6b9737e1624b4b4164afeb9af93edeb7
 
 build:
   noarch: python
@@ -20,18 +20,16 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - jinja2
     - python >=3.7
+    - python-multipart
     - sqlalchemy >=1.4
     - starlette
     - typing_extensions >=4.0
     - wtforms >=3,<4
 
-    # From starlette[full]
-    - itsdangerous
-    - jinja2
-    - python-multipart
-    - pyyaml
-    - httpx >=0.22.0
+    # Not listed upstream but needed anyway
+    - itsdangerous ==2.1.2
 
 test:
   imports:
