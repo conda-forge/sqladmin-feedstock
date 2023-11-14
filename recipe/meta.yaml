@@ -22,10 +22,9 @@ requirements:
   run:
     - jinja2
     - python >=3.8
-    - python-multipart
     - sqlalchemy >=1.4
     - starlette
-    - wtforms >=3,<4
+    - wtforms >=3.1,<3.2
 
     # Not listed upstream but needed anyway
     - itsdangerous
