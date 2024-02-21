@@ -1,5 +1,5 @@
 {% set name = "sqladmin" %}
-{% set version = "0.15.2" %}
+{% set version = "0.16.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqladmin-{{ version }}.tar.gz
-  sha256: f7f25a267a471e60bcdc11cd4e885866904adb27f8ed40beca26e52e4d928f96
+  sha256: 5d43ddf5bdca05fe5e806d9d328268f96adae37558dbd0aad2fc57e0f660ba83
 
 build:
   noarch: python
