@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sqladmin
-  version: "0.24.0"
+  version: "0.25.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sqladmin-${{ version }}.tar.gz
-  sha256: 186680182855c30d9b912267bd5a5f66493b15ee2f8ca296d16c420faa6cfb96
+  sha256: 370f183eca5ea95281176c086b23d704773e6c77b745342753601a9a9abcb93c
 
 build:
   number: 0
