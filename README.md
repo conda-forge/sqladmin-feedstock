@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sqladmin` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sqladmin
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sqladmin
 ```
 
-It is possible to list all of the versions of `sqladmin` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sqladmin
+# for installing globally
+pixi global install sqladmin
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sqladmin` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sqladmin --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sqladmin --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sqladmin --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds sqladmin --channel conda-forge
 # List dependencies of `sqladmin`:
 mamba repoquery depends sqladmin --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
